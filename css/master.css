@@ -1,0 +1,306 @@
+@import "all.min.css";
+
+* { font-family: 'Open Sans', sans-serif;margin:0; }
+*:focus {
+  outline: none;
+}
+
+:root {
+  --nexilia-color-dark: rgb(109, 17, 138);
+  --nexilia-color-light: rgb(125, 20, 158);
+  
+  --nexilia-color-dark-alpha: rgba(109, 17, 138, .3);
+  --nexilia-color-light-alpha: rgba(109, 17, 138, .2);
+}
+
+body { width: 60%; margin: 0 auto 150px auto; border-bottom: 4px solid #6247aa; }
+
+
+header {
+  border-top: 1px solid var(--nexilia-color-dark-alpha);
+  border-bottom: 1px solid var(--nexilia-color-dark-alpha);
+  margin-bottom: 32px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+header > p {
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto 16px auto;
+}
+
+header img.logo {
+  max-width: 146px;
+  margin: 30px auto;
+  display: block;
+}
+
+header h2.h1 {
+  line-height: 96px;
+}
+
+section {
+  border-bottom: 1px solid var(--nexilia-color-dark-alpha);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+section > p {
+  margin-bottom: 16px;
+}
+
+h1, h2, h3, h4{
+  color: var(--nexilia-color-dark);
+}
+.h1 {
+  font-size: 32px;
+  line-height: 64px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h3 { font-weight: 300; }
+
+i.icon { font-style: normal }
+.block{ border-left: 2px solid;}
+.block.attention { border-color: #ffcc00; position:relative; }
+.block.attention .icon {
+  border-color: #ffcc00;
+  background-color: #ffcc00;
+  
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  caption-side: bottom;
+  margin-bottom: 16px;
+}
+table caption,
+figure figcaption {
+  font-style: italic;
+  color: #333;
+  font-size: 80%;
+  padding: 4px 0;
+}
+table thead tr {
+  background-color: var(--nexilia-color-dark);
+  color: white;
+}
+table thead th {
+  text-align: left;
+  font-weight: normal;
+}
+table tbody tr:nth-child(odd){
+  background-color: var(--nexilia-color-light-alpha);
+}
+table tbody tr:nth-child(even){
+  background-color: var(--nexilia-color-dark-alpha);
+}
+table tr th,
+table tr td {
+  padding: 4px 8px;
+}
+table tr th {text-align: left;}
+em.tag {
+  background-color: #efefef;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-style: normal;
+  color: #333;
+  font-size: 60%;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 18px;
+}
+em.tag.green {
+  background-color: #25a244;
+  font-style:normal;
+  color: white;
+}
+em.tag.blue {
+  background-color: #2196f3;
+  font-style:normal;
+  color: white;
+}
+em.tag.purple {
+  background-color: #6247aa;
+  font-style:normal;
+  color: white;
+}
+em.tag.orange {
+  background-color: #ff9900;
+  font-style:normal;
+  color: white;
+}
+em.tag.red {
+  background-color: #9d0208;
+  font-style:normal;
+  color: white;
+}
+img{ width: 100%}
+ul{ margin:0;padding:0;list-style-type: none;}
+li{margin:0;padding:0;display: inline-block;}
+figure { margin:0 0 16px 0;text-align: center;}
+
+details {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+details.design { background-color: #ff5a5f; color:white; }
+details summary { cursor: pointer; }
+details summary > * { display: inline; }
+details > summary {
+  list-style-type: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+blockquote {
+  margin-bottom: 16px;
+  padding: 32px 64px;
+  position: relative; 
+}
+blockquote:before {
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  text-align: center;
+  left: -20px;
+  top: calc(50% - 20px);
+  font-size: 30px;
+  border: 4px solid white;
+}
+blockquote.good,
+blockquote.good:before {
+  color: darkgreen;
+  background-color: rgb(222, 239, 229);
+}
+blockquote.good:before {
+  content: "✓";
+}
+blockquote.bad,
+blockquote.bad:before {
+  color: darkorange;
+  background-color: rgb(254, 237, 224);
+}
+blockquote.bad:before {
+  content: "⚠";
+}
+blockquote.restriction,
+blockquote.restriction:before {
+  color: #33658a;
+  background-color: rgb(227, 233,238);
+}
+blockquote.restriction:before {
+  content: "#";
+}
+blockquote.upselling {
+  color: #33658a;
+  background-color: transparent;
+  padding: 16px;
+  text-align: center;
+  border-color: #33658a;
+  font-style: italic;
+  font-size: 90%;
+}
+blockquote.tip small { display: block;font-weight: bold;text-transform: uppercase;margin-bottom: 4px;}
+blockquote.tip p:last-child { margin: 0;}
+blockquote.tip,
+blockquote.tip:before {
+  color: #33658a;
+  background-color: rgb(227, 233,238);
+}
+blockquote.tip:before {
+  content: "☞";
+}
+
+table.logos thead tr,
+table.logos tbody tr { background-color: white; }
+table.logos th, .logos td { text-align: center; nackgr }
+table.logos img { max-width: 90px;}
+table.logos img.disabled { max-width: 90px;opacity: .6;filter: brightness(.5);}
+
+.btn {
+  border: 1px solid;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto 16px auto;
+  display: block;
+  width: fit-content;
+}
+
+.wip {
+  background-color: #b7b7a4;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8rem;
+}
+
+.hidden {display:none;}
+
+.hint {
+  font-size: 80%;
+  font-style: italic;
+  margin: 0;
+}
+
+.small-wide { width: 70%; margin: 0 auto; }
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.d-flex.horizontal { flex-direction: row;}
+.d-flex.horizontal.side-by-side li { flex-direction: row; max-width: 49%;}
+.d-flex.vertical { flex-direction: column;;}
+.d-flex .mobile-view { max-width: 27%; }
+.d-flex .desktop-view { flex: 1; }
+
+.breadcrumb {font-size: 14px;}
+.breadcrumb a {color: #1259c3; font-weight: bold;}
+.breadcrumb li:not(:last-child):after {
+  content: "/";
+  margin-left: 4px;
+  color: #666;
+}
+
+.meter { height: 10px; width: 15%; display: flex;position: relative;padding-top: 10px; margin: 16px 0;}
+.meter > div { height: 100%; flex:1; }
+.meter > .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #f00;
+  position: absolute;
+  top: 0;
+}
+.meter.left > .arrow-down {
+  left: 10%;
+}
+.meter.middle > .arrow-down {
+  left: calc(50% - 8px);
+}
+.meter.right > .arrow-down {
+  left: 78%;
+}
+.meter .section-green { background-color: green; }
+.meter .section-yellow { background-color: #ffcc00; }
+.meter .section-red { background-color: red; }
+
+section.pages ul.pages-collection {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-bottom: 16px;
+}
+section.pages ul.pages-collection li{
+  min-width: 40%;
+  margin-right: 16px;
+}
